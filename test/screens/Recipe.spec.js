@@ -23,4 +23,12 @@ describe('Recipe', () => {
         expect(ingredients.at(0).text().trim()).toEqual('1 cup Sugar')
         expect(ingredients.at(1).text().trim()).toEqual('1 tsp salt')
     });
+
+    it('should have instructions', () => {
+        const expectedInstructions = 'First add Sugar. then combine dry ingredients ...';
+        const recipe = shallow(<Recipe title={''} ingredients={[]} instructions={expectedInstructions}/>)
+        const instructions = recipe.find('.instructions');
+        expect(instructions.length).toEqual(1);
+        expect(instructions.text().trim()).toEqual(expectedInstructions);
+    })
 });

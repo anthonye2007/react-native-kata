@@ -2,7 +2,8 @@ import React, { Component, Text, View } from 'react'
 
 type Props = {
     title : '',
-    ingredients : []
+    ingredients : [],
+    instructions: ''
 };
 
 export default class Recipe extends Component<Props> {
@@ -13,6 +14,7 @@ export default class Recipe extends Component<Props> {
                 <ul>
                     {this.props.ingredients.map((item, index) => <li key={index}>{item}</li>)}
                 </ul>
+                <Text className='instructions'>{this.props.instructions}</Text>
             </View>
         )
     }
