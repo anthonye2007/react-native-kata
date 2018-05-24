@@ -14,7 +14,8 @@ export default class RecipeBox extends Component<Props> {
     render() {
         return (
             <Card>
-                { this.props.recipes.map(recipe => <Recipe title={recipe.title}
+                { this.props.recipes.map(recipe => <Recipe key={recipe.title}
+                                                           title={recipe.title}
                                                            ingredients={recipe.ingredients}
                                                            instructions={recipe.instructions}/>)
                 }

@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTModuleMethod.mm \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTModuleMethod.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTBridgeMethod.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTNullability.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTCxxConvert.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTManagedPointer.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Base/RCTParserUtils.h \
+  /Users/jharrell/Repos/Pillar/react-native-kata/node_modules/react-native/React/Profiler/RCTProfile.h

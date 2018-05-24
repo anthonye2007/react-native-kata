@@ -1,14 +1,25 @@
 import React from 'react';
 import RecipeBox from "./screens/RecipeBox";
+import axios from 'axios';
 
 export default class App extends React.Component {
-  render() {
-    const cookies = {title: "Cookies", ingredients: ["sugar", "more sugar", "butter"], instructions: "Mix all ingredients together and bake"};
-    const fruitSalad = {title: "Fruit Salad", ingredients: ["grapes", "melon", "raspberries"], instructions: "Mix all ingredients together and serve"};
-    const jello = {title: "Jello", ingredients: ["sugar", "gelatin", "water"], instructions: "Mix all ingredients together and chill"};
-    const recipes = [cookies, fruitSalad, jello];
-    return (
-        <RecipeBox recipes={recipes}/>
-    );
-  }
+    state = {
+        recipes: []
+    };
+
+    componentDidMount() {
+        return axios.get('http://10.0.2.2:3000/recipes').then((response) => {
+            this.setState({
+                recipes: response.data.recipes
+            });
+        }).catch(reason => {
+            console.error(reason.toString());
+        });
+    }
+
+    render() {
+        return (
+            <RecipeBox recipes={this.state.recipes}/>
+        );
+    }
 }
