@@ -11,17 +11,17 @@ describe('Recipe', () => {
     it('should have the title text it was given', () => {
         const expectedRecipeTitle = 'My Recipe';
         const recipe = shallow(<Recipe title={expectedRecipeTitle} ingredients={[]}/>);
-        expect(recipe.find('.title').text().trim()).toEqual(expectedRecipeTitle);
+        expect(recipe.find('.title').dive().text().trim()).toEqual(expectedRecipeTitle);
     });
 
     it('should have a ingredients', () => {
         const expectedIngredients = ['1 cup Sugar', '1 tsp salt'];
         const recipe = shallow(<Recipe ingredients={expectedIngredients}/>);
-        const ingredients = recipe.find('li')
+        const ingredients = recipe.find('.ingredient');
 
         expect(ingredients.length).toEqual(2);
-        expect(ingredients.at(0).text().trim()).toEqual('1 cup Sugar')
-        expect(ingredients.at(1).text().trim()).toEqual('1 tsp salt')
+        expect(ingredients.at(0).childAt(0).dive().text().trim()).toEqual('1 cup Sugar')
+        expect(ingredients.at(1).childAt(0).dive().text().trim()).toEqual('1 tsp salt')
     });
 
     it('should have instructions', () => {
@@ -29,6 +29,6 @@ describe('Recipe', () => {
         const recipe = shallow(<Recipe title={''} ingredients={[]} instructions={expectedInstructions}/>)
         const instructions = recipe.find('.instructions');
         expect(instructions.length).toEqual(1);
-        expect(instructions.text().trim()).toEqual(expectedInstructions);
+        expect(instructions.dive().text().trim()).toEqual(expectedInstructions);
     })
 });

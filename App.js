@@ -1,23 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import RecipeBox from "./screens/RecipeBox";
 
 export default class App extends React.Component {
   render() {
+    const cookies = {title: "Cookies", ingredients: ["sugar", "more sugar", "butter"], instructions: "Mix all ingredients together and bake"};
+    const fruitSalad = {title: "Fruit Salad", ingredients: ["grapes", "melon", "raspberries"], instructions: "Mix all ingredients together and serve"};
+    const jello = {title: "Jello", ingredients: ["sugar", "gelatin", "water"], instructions: "Mix all ingredients together and chill"};
+    const recipes = [cookies, fruitSalad, jello];
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+        <RecipeBox recipes={recipes}/>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

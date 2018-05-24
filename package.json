@@ -3,30 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react-native": "4.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest-expo": "~27.0.0",
+    "flow-bin": "^0.71.0",
+    "jest": "^22.4.4",
     "react-dom": "^16.3.2",
-    "react-native-scripts": "1.14.0",
     "react-test-renderer": "16.3.1"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "jest"
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "flow start": "flow start",
+    "flow stop": "flow stop",
+    "flow status": "flow status",
+    "flow coverage": "flow coverage"
   },
   "jest": {
-    "preset": "jest-expo",
+    "preset": "react-native",
     "setupFiles": [
       "./test/jestSetup.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!native-base-shoutem-theme|react-native-easy-grid|react-native|react-navigation|expo)"
     ]
   },
   "dependencies": {
-    "expo": "^27.0.1",
+    "native-base": "^2.4.5",
     "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "react-native": "^0.55.4"
   }
 }
